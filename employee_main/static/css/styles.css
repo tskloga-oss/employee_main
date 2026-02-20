@@ -1,0 +1,52 @@
+    body {
+            font-family: "Inter", sans-serif;
+            background: #f5f5f5;
+            margin: 0;
+            padding: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        table {
+            margin: auto;
+            border-collapse: collapse;
+            width: 90%;
+            max-width: 1000px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        thead {
+            background: purple; /* header background */
+            color: white;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+
+        tbody tr {
+            background: #fff8e1; /* creamy white rows */
+        }
+
+        tbody tr:hover {
+            background: #f0e6d2; /* slightly darker on hover */
+        }
+
+        th {
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 0.5px;
+        }
+
+        td {
+            color: #555;
+            font-size: 15px;
+        }
