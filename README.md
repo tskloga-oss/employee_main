@@ -21,40 +21,46 @@ This project follows Django best practices in terms of template organization and
 ```bash
 python -m venv venv
 venv\Scripts\activate
-Activate the virtual environment:
+```
 
-Windows
+### Activate the virtual environment:
 
-venv\Scripts\activate
+>> Windows : venv\Scripts\activate
 
-Mac/Linux
+>> Mac/Linux: source venv/bin/activate
 
-source venv/bin/activate
-2️⃣ Install Dependencies
+###  Install Dependencies
+```
 pip install -r requirements.txt
+```
 
 If requirements file is not available:
-
+```bash
 pip install django
-3️⃣ Database Migrations
+```
+
+### Database Migrations
 
 Apply migrations to set up the database:
-
+```bash
 python manage.py makemigrations
 python manage.py migrate
-4️⃣ Create a Superuser (Admin)
+```
+
+### Create a Superuser (Admin)
 python manage.py createsuperuser
 
 Follow the prompts to create an admin account.
 
-5️⃣ Run the Server
+### Run the Server
 python manage.py runserver
 
-Access the app at:
-
+### Access the app at:
+```
 http://127.0.0.1:8000/
 📁 Project Structure
 📂 Static & Media Placement
+```
 
 Your static/ and media/ folders are placed inside the main project configuration directory:
 
@@ -83,21 +89,6 @@ db.sqlite3
 
 SQLite is lightweight and perfect for development purposes.
 
-📸 Screenshots
-🏠 Home Page
-
-Description:
-Displays the main dashboard where users can view the list of employees and navigate to other sections of the system.
-
-➕ Add Employee
-
-Description:
-Provides a form to add new employee details including personal and professional information.
-
-👤 Employee Details
-
-Description:
-Displays complete information about a selected employee with structured and readable formatting.
 
 ✅ Features
 
@@ -123,12 +114,3 @@ HTML
 
 CSS
 
-📌 Future Improvements
-
-Add authentication & role-based access
-
-Implement search & filter functionality
-
-Deploy to cloud (Heroku / AWS / PythonAnywhere)
-
-Add REST API support
