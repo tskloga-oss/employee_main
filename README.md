@@ -62,35 +62,9 @@ http://127.0.0.1:8000/
 📂 Static & Media Placement
 ```
 
-Your static/ and media/ folders are placed inside the main project configuration directory:
-
-employee_main/
-
-instead of the root directory.
-
-📂 Template Organization
-
-Templates are organized inside a subfolder for the employee app, which is a best practice to avoid template name conflicts in larger projects.
-
-Example:
-
-templates/
-    employee/
-        home.html
-        add_employee.html
-        employee_detail.html
-🗄️ Database
-
-Database used: SQLite
-
-Database file located in root directory:
-
-db.sqlite3
-
-SQLite is lightweight and perfect for development purposes.
 
 
-✅ Features
+###  Features
 
 CRUD-ready employee management structure
 
@@ -102,15 +76,15 @@ SQLite database integration
 
 Clean and user-friendly interface
 
-🛠️ Technologies Used
+### Technologies Used
 
-Python
+1. Python
 
-Django
+2. Django
 
-SQLite
+3. SQLite
 
-HTML
+4. HTML
 
-CSS
+5. CSS
 
