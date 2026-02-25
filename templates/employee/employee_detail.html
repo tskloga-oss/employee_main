@@ -1,0 +1,44 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+
+<h1>Employee Record: {{ emp.full_name }}</h1>
+
+<table class="vertical-table">
+  <tr>
+    <th>PROFILE IMAGE</th>
+    <td>
+      {% if emp.image %}
+      <img
+        src="{{ emp.image.url }}"
+        alt="{{ emp.full_name }}"
+        style="
+          width: 100px;
+          height: 100px;
+          object-fit: cover;
+          border-radius: 50%;
+          border: 2px solid #7b1fa2;
+        "
+      />
+      {% else %}
+      <i class="fa fa-user-circle" style="font-size: 100px; color: #ccc"></i>
+      {% endif %}
+    </td>
+  </tr>
+
+  <tr>
+    <th>ID</th>
+    <td>{{ emp.id }}</td>
+  </tr>
+  <tr>
+    <th>NAME</th>
+    <td><strong>{{ emp.full_name }}</strong></td>
+  </tr>
+  <tr>
+    <th>EMAIL</th>
+    <td>{{ emp.email }}</td>
+  </tr>
+</table>
+
+<div style="text-align: center; margin-top: 20px">
+  <a href="{% url 'home' %}" class="back-link">← Back to List</a>
+</div>

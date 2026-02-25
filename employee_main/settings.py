@@ -55,7 +55,7 @@ ROOT_URLCONF = 'employee_main.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["templates"],  # Add this line to specify the templates directory
+        'DIRS': [BASE_DIR/'templates'],  # Add this line to specify the templates directory
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -116,5 +116,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/' #url prefix for static files
-STATIC_ROOT = BASE_DIR / 'static'  # it's for production, where collectstatic will gather all static files. By running 'python manage.py collectstatic', it will collect all static files from your apps and place them in this directory.
+STATIC_ROOT = BASE_DIR / 'staticfiles'  # it's for production, where collectstatic will gather all static files. By running 'python manage.py collectstatic', it will collect all static files from your apps and place them in this directory.
 STATICFILES_DIRS = ['employee_main/static']  # Add this line to include the static files from the employee_main project
+
+
+MEDIA_URL = '/media/'  # URL prefix for media files
+MEDIA_ROOT = BASE_DIR / 'media'  # Directory where uploaded media files will be stored
