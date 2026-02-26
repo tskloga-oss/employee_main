@@ -58,8 +58,6 @@ python manage.py runserver
 ### Access the app at:
 ```
 http://127.0.0.1:8000/
-📁 Project Structure
-📂 Static & Media Placement
 ```
 
 
